@@ -13,10 +13,12 @@
   end
 end 
 
+$ticket_count = 0
+
 def take_a_number(line)
-  ticket_count = line.length + 1
-  line.push(ticket_count)
-  puts "Welcome, you are ticket number #{ticket_count}. You are number #{line.length} in line."
+  count = $ticket_count += 1
+  line.push(count)
+  puts "Welcome, you are ticket number #{count}. You are number #{line.length} in line."
 end
 
 def now_serving(line)
