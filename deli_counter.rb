@@ -13,9 +13,9 @@
   end
 end 
 
-def take_a_number(line, new_person)
-  line.push(new_person) 
-  puts "Welcome, #{new_person}. You are number #{line.length} in line."
+def take_a_number(line)
+  ticket_count = line.length + 1
+  puts "Welcome, you are ticket number #{ticket_count}. You are number #{line.length} in line."
 end
 
 puts "Welcome, you are ticket number 12. You are 1 in line."
