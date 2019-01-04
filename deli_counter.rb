@@ -18,6 +18,9 @@ def take_a_number(line, new_person)
   puts "Welcome, #{new_person}. You are number #{line.length} in line."
 end
 
+puts "Welcome, you are ticket number 12. You are 1 in line."
+puts "welcome, you are ticket number 10. You are 2 in line."
+
 def now_serving(line)
   if line.length == 0 
     puts"There is nobody waiting to be served!"
@@ -27,8 +30,9 @@ def now_serving(line)
   end
 end
 
-
-
+katz_deli = []
+take_a_number(katz_deli, "Matt")
+take_a_number(katz_deli, "Alyssa")
 
   
   
