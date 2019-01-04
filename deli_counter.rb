@@ -15,6 +15,7 @@ end
 
 def take_a_number(line)
   ticket_count = line.length + 1
+  line.push(ticket_count)
   puts "Welcome, you are ticket number #{ticket_count}. You are number #{line.length} in line."
 end
 
